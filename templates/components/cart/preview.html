@@ -82,16 +82,18 @@
                         {{/or}}
                     </div>
 
-                    {{#each options}}
-                        <dl class="productView-info">
-                            <dt class="productView-info-name">
-                                {{name}}
-                            </dt>
-                            <dd class="productView-info-value">
-                                {{{ sanitize value}}}
-                            </dd>
-                        </dl>
-                    {{/each}}
+                    <dl class="productView-info">
+                        {{#each options}}
+                            {{#if value '!=' 'No'}}
+                                <dt class="productView-info-name">
+                                    {{name}}
+                                </dt>
+                                <dd class="productView-info-value">
+                                    {{{ sanitize value}}}
+                                </dd>
+                            {{/if}}
+                        {{/each}}
+                    </dl>
                 </div>
             {{/with}}
         </section>

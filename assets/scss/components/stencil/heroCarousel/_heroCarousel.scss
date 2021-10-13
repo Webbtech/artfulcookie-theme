@@ -181,7 +181,7 @@
 
     @include breakpoint("small") {
         @include carouselOpaqueBackgrounds;
-        background-color: rgba($carousel-bgColor, 0.9);
+        background-color: rgba($carousel-bgColor, 0.5);
         left: 0;
         margin: 0 auto;
         max-height: 80%;
