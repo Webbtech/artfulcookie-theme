@@ -64,7 +64,7 @@
     font-size: 0;   // 1
     height: $header-height;
     margin: 0 remCalc($header-toggle-width); // 2
-    text-align: left;
+    text-align: center;
 
     @include breakpoint("small") { // 4
         margin-left: remCalc($header-toggle-width * 1.5);
@@ -72,7 +72,7 @@
     }
 
     @include breakpoint("medium") {
-        // height: auto;
+        height: auto;
         // margin: (spacing("double") + spacing("base")) auto (spacing("double") + spacing("single"));
         padding: 0;
 
